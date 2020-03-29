@@ -14,8 +14,3 @@
 Route::get('/', function () {
     return view('welcome');
 });
-
-Route::get('wayang','WayangController@index');
-Route::post('wayang','WayangController@create');
-Route::put('wayang/{id}','WayangController@update');
-Route::delete('wayang/{id}','WayangController@delete');
