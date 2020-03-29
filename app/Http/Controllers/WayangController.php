@@ -21,7 +21,7 @@ class WayangController extends Controller
 
     public function show($id)
     {
-        $result = Wayang::where('id', $id)->first();
+        $result = Wayang::find('id', $id);
 
         if($result){
             $data['code'] = 200;
