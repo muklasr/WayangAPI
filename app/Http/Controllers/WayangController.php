@@ -46,8 +46,7 @@ class WayangController extends Controller
             $data['code'] = 500;
             $data['result'] = 'Error';
         }
-        return $request->nama;
-        // return response($data);
+        return response($data);
     }
 
     public function update(request $request, $id){
