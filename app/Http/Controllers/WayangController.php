@@ -35,7 +35,7 @@ class WayangController extends Controller
 
     public function create(request $request){
         $wayang = new Wayang;
-        $wayang->nama = $request->nama;
+        $wayang->name = $request->name;
         $wayang->image_url = $request->image_url;
         $wayang->save();
 
@@ -51,7 +51,7 @@ class WayangController extends Controller
 
     public function update(request $request, $id){
         $result = Wayang::find($id);
-        $result->nama = $request->nama;
+        $result->name = $request->name;
         $result->image_url = $request->image_url;
         $result->save();
 
