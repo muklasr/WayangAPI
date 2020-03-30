@@ -45,7 +45,8 @@ class WayangController extends Controller
             $data['code'] = 500;
             $data['result'] = 'Error';
         }
-        return response()->json($data);
+        // return response()->json($data);
+        return $result;
     }
 
     public function create(request $request){
