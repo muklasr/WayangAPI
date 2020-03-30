@@ -20,7 +20,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::group(['middleware' => ['cors']], function () {
     Route::get('wayang','WayangController@index');
     Route::get('wayang/{id}','WayangController@show');
-    Route::get('wayang?q={name}','WayangController@search');
+    Route::get('wayang?q={nama}','WayangController@search');
     Route::post('wayang','WayangController@create');
     Route::put('wayang/{id}','WayangController@update');
     Route::delete('wayang/{id}','WayangController@delete');
