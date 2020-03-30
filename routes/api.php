@@ -17,7 +17,9 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::middleware('cors')->get('wayang','WayangController@index');
-Route::middleware('cors')->post('wayang','WayangController@create');
-Route::middleware('cors')->put('wayang/{id}','WayangController@update');
-Route::middleware('cors')->delete('wayang/{id}','WayangController@delete');
+Route::group(['middleware' => ['cors']], function () {
+    Route::get('wayang','WayangController@index');
+    Route::post('wayang','WayangController@create');
+    Route::put('wayang/{id}','WayangController@update');
+    Route::delete('wayang/{id}','WayangController@delete');
+});
