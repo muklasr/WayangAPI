@@ -85,8 +85,8 @@
                 </div>
 
                 <div class="links">
-                    <a href="https://wayangapi.herokuapp.com//docs">Docs</a>
-                    <a href="https://wayangapi.herokuapp.com//wayang">List Wayang</a>
+                    <a href="https://wayangapi.herokuapp.com/docs">Docs</a>
+                    <a href="https://wayangapi.herokuapp.com/api/wayang">List Wayang</a>
                     <a href="https://github.com/muklasr/wayangapi">GitHub</a>
                 </div>
             </div>
