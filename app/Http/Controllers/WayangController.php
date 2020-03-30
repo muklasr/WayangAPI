@@ -35,16 +35,16 @@ class WayangController extends Controller
 
     public function search($nama)
     {
-        $result = Wayang::where('nama', 'like' , '%'.$nama.'%')->get();
-
-        if($result){
-            $data['code'] = 200;
-            $data['result'] = $result;
-        } else {
-            $data['code'] = 500;
-            $data['result'] = 'Error';
-        }
-        return response()->json($data);
+        $result = Wayang::where('nama', 'like', '%'.$nama.'%')->get();
+        return $nama;
+        // if($result){
+        //     $data['code'] = 200;
+        //     $data['result'] = $result;
+        // } else {
+        //     $data['code'] = 500;
+        //     $data['result'] = 'Error';
+        // }
+        // return response()->json($data);
     }
 
     public function create(request $request){
