@@ -35,7 +35,7 @@ class WayangController extends Controller
 
     public function search($nama)
     {
-        $result = Wayang::whereRaw("UPPER('nama') LIKE '%'". strtoupper($nama)."'%'"); 
+        $result = Wayang::whereRaw("UPPER('nama') LIKE '%'". strtoupper($nama)."'%'")->get(); 
         
         if($result){
             $data['code'] = 200;
