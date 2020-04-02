@@ -86,15 +86,15 @@ class WayangController extends Controller
 
     public function update(request $request, $id){
         $result = Wayang::find($id);
-        $wayang->nama = $request->nama;
-        $wayang->golongan = $request->golongan;
-        $wayang->kasta = $request->kasta;
-        $wayang->senjata = $request->senjata;
-        $wayang->ayah = $request->ayah;
-        $wayang->ibu = $request->ibu;
-        $wayang->pasangan = $request->pasangan;
-        $wayang->anak = $request->anak;
-        $wayang->image_url = $request->image_url;
+        $result->nama = $request->nama;
+        $result->golongan = $request->golongan;
+        $result->kasta = $request->kasta;
+        $result->senjata = $request->senjata;
+        $result->ayah = $request->ayah;
+        $result->ibu = $request->ibu;
+        $result->pasangan = $request->pasangan;
+        $result->anak = $request->anak;
+        $result->image_url = $request->image_url;
         $result->save();
 
         if($result){
