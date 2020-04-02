@@ -47,6 +47,20 @@ class WayangController extends Controller
         return response()->json($data);
     }
 
+    public function searchByGolongan($golongan)
+    {
+        $result = Wayang::where('golongan', 'ilike', '%'. $golongan.'%')->get(); 
+        
+        if($result){
+            $data['code'] = 200;
+            $data['result'] = $result;
+        } else {
+            $data['code'] = 500;
+            $data['result'] = 'Error';
+        }
+        return response()->json($data);
+    }
+
     public function create(request $request){
         $wayang = new Wayang;
         $wayang->nama = $request->nama;

@@ -21,6 +21,7 @@ Route::group(['middleware' => ['cors']], function () {
     Route::get('wayang/search/{nama}','WayangController@search');
     Route::get('wayang','WayangController@index');
     Route::get('wayang/{id}','WayangController@show');
+    Route::get('wayang/kategori/{kategori}','WayangController@searchByGolongan');
     Route::post('wayang','WayangController@create');
     Route::put('wayang/{id}','WayangController@update');
     Route::delete('wayang/{id}','WayangController@delete');
