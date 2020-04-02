@@ -85,7 +85,7 @@ class WayangController extends Controller
     }
 
     public function update(request $request, $id){
-        $result = Wayang::find($id);
+        $result = Wayang::where('id',$id)->first();
         $result->nama = $request->nama;
         $result->golongan = $request->golongan;
         $result->kasta = $request->kasta;
