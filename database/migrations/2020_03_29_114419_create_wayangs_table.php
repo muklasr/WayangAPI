@@ -16,6 +16,13 @@ class CreateWayangsTable extends Migration
         Schema::create('wayangs', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('nama');
+            $table->string('golongan');
+            $table->string('kasta');
+            $table->string('senjata');
+            $table->string('ayah');
+            $table->string('ibu');
+            $table->string('pasangan');
+            $table->string('anak');
             $table->string('image_url');
             $table->timestamps();
         });
