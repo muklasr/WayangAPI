@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="{{ asset('images/background.png') }}">
 
         <title>WayangAPI</title>
 
@@ -296,7 +297,7 @@
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td scope="row"><span class="badge badge-success">POST</span></td>
+                                        <td scope="row"><span class="badge badge-primary">POST</span></td>
                                         <td><pre>https://wayangapi.herokuapp.com/api/wayang</pre></td>
                                     </tr>
                                 </tbody>
