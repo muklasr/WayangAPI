@@ -48,7 +48,7 @@
                             <pre>https://wayangapi.herokuapp.com/api/wayang</pre><br>
                             <h5 data-toggle="collapse" href="#allCollapse" role="button" aria-expanded="true" aria-controls="allCollapse">Response Samples</h5>
                             <hr>
-                            <pre class="collapse" id="allCollapse">
+                            <pre class="collapse show" id="allCollapse">
 {
     "code":200,
     "result":[
@@ -94,7 +94,7 @@
                             <pre>https://wayangapi.herokuapp.com/api/wayang/2</pre><br>
                             <h5 data-toggle="collapse" href="#oneCollapse" role="button" aria-expanded="true" aria-controls="oneCollapse">Response Samples</h5>
                             <hr>
-                            <pre class="collapse" id="oneCollapse">
+                            <pre class="collapse show" id="oneCollapse">
 {
     "code":200,
     "result":[
@@ -127,7 +127,7 @@
                             <pre>https://wayangapi.herokuapp.com/api/wayang/search/Ba</pre><br>
                             <h5 data-toggle="collapse" href="#snameCollapse" role="button" aria-expanded="true" aria-controls="snameCollapse">Response Samples</h5>
                             <hr>
-                            <pre class="collapse" id="snameCollapse">
+                            <pre class="collapse show" id="snameCollapse">
 {
     "code": 200,
     "result": [
@@ -172,7 +172,7 @@
                             <pre>https://wayangapi.herokuapp.com/api/wayang/category/ponokawan</pre><br>
                             <h5 data-toggle="collapse" href="#scatCollapse" role="button" aria-expanded="true" aria-controls="scatCollapse">Response Samples</h5>
                             <hr>
-                            <pre class="collapse" id="scatCollapse">
+                            <pre class="collapse show" id="scatCollapse">
 {
     "code": 200,
     "result": [
