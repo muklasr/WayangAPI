@@ -27,17 +27,17 @@
         <div class="container">
         <!-- Nav tabs -->
             <div class="nav flex-column nav-pills mt-5" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                <a class="nav-link active" id="v-pills-allwayang" data-toggle="pill" href="#allwayang" role="tab" aria-controls="v-pills-allwayang" aria-selected="true">Get All Wayang</a>
-                <a class="nav-link" id="v-pills-onewayang" data-toggle="pill" href="#onewayang" role="tab" aria-controls="v-pills-onewayang" aria-selected="false">Get One Wayang</a>
-                <a class="nav-link" id="v-pills-search" data-toggle="pill" href="#search" role="tab" aria-controls="v-pills-search" aria-selected="false">Search Wayang</a>
-                <a class="nav-link" id="v-pills-add" data-toggle="pill" href="#add" role="tab" aria-controls="v-pills-add" aria-selected="false">Add Wayang</a>
-                <a class="nav-link" id="v-pills-update" data-toggle="pill" href="#update" role="tab" aria-controls="v-pills-update" aria-selected="false">Update Wayang</a>
-                <a class="nav-link" id="v-pills-delete" data-toggle="pill" href="#delete" role="tab" aria-controls="v-pills-delete" aria-selected="false">Delete Wayang</a>
+                <a class="nav-link active" id="v-pills-allwayang-tab" data-toggle="pill" href="#allwayang" role="tab" aria-controls="v-pills-allwayang" aria-selected="true">Get All Wayang</a>
+                <a class="nav-link" id="v-pills-onewayang-tab" data-toggle="pill" href="#onewayang" role="tab" aria-controls="v-pills-onewayang" aria-selected="false">Get One Wayang</a>
+                <a class="nav-link" id="v-pills-search-tab" data-toggle="pill" href="#search" role="tab" aria-controls="v-pills-search" aria-selected="false">Search Wayang</a>
+                <a class="nav-link" id="v-pills-add-tab" data-toggle="pill" href="#add" role="tab" aria-controls="v-pills-add" aria-selected="false">Add Wayang</a>
+                <a class="nav-link" id="v-pills-update-tab" data-toggle="pill" href="#update" role="tab" aria-controls="v-pills-update" aria-selected="false">Update Wayang</a>
+                <a class="nav-link" id="v-pills-delete-tab" data-toggle="pill" href="#delete" role="tab" aria-controls="v-pills-delete" aria-selected="false">Delete Wayang</a>
             </div>
 
             <!-- Tab panes -->
             <div class="tab-content" id="v-pills-tabContent">
-                <div class="tab-pane active" id="v-pills-allwayang" role="tabpanel" aria-labelledby="v-pills-allwayang">
+                <div class="tab-pane active" id="v-pills-allwayang" role="tabpanel" aria-labelledby="v-pills-allwayang-tab">
                     <h3>Return all wayang</h3>
                     <h5>URL</h5>
                     <hr>
@@ -80,7 +80,7 @@
                         }
                     </pre>
                 </div>
-                <div class="tab-pane" id="v-pills-onewayang" role="tabpanel" aria-labelledby="v-pills-onewayang">
+                <div class="tab-pane" id="v-pills-onewayang" role="tabpanel" aria-labelledby="v-pills-onewayang-tab">
                     <h3>Return one wayang</h3>
                     <h5>URL</h5>
                     <hr>
@@ -109,7 +109,7 @@
                         }
                     </pre>
                 </div>
-                <div class="tab-pane" id="v-pills-search" role="tabpanel" aria-labelledby="v-pills-search">
+                <div class="tab-pane" id="v-pills-search" role="tabpanel" aria-labelledby="v-pills-search-tab">
                     <h3>Search wayang</h3>
                     <h4>Search by name</h4>
                     <h5>URL</h5>
@@ -223,13 +223,13 @@
                         }
                     </pre>
                 </div>
-                <div class="tab-pane" id="v-pills-add" role="tabpanel" aria-labelledby="v-pills-add">
+                <div class="tab-pane" id="v-pills-add" role="tabpanel" aria-labelledby="v-pills-add-tab">
                     <h3>Add wayang</h3>
                 </div>
-                <div class="tab-pane" id="v-pills-update" role="tabpanel" aria-labelledby="v-pills-update">
+                <div class="tab-pane" id="v-pills-update" role="tabpanel" aria-labelledby="v-pills-update-tab">
                     <h3>Update wayang</h3>
                 </div>
-                <div class="tab-pane" id="v-pills-delete" role="tabpanel" aria-labelledby="v-pills-delete">
+                <div class="tab-pane" id="v-pills-delete" role="tabpanel" aria-labelledby="v-pills-delete-tab">
                     <h3>Delete wayang</h3>
                 </div>
             </div>
