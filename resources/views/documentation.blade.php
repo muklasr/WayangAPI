@@ -9,17 +9,6 @@
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <!-- Styles -->
-        <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Nunito', sans-serif;
-                font-weight: 200;
-                height: 100vh;
-                margin: 0;
-            }
-        </style>
     </head>
     <body>
         <nav class="navbar sticky-top navbar-expand-md navbar-dark bg-primary">
@@ -35,41 +24,48 @@
                 </div>
             </div>
         </nav>
-        <div class="container">
-        <div class="row">
-            <div class="col-4">
-                <div class="list-group" id="list-tab" role="tablist">
-                    <a class="list-group-item list-group-item-action active" id="list-allwayang-list" data-toggle="list" href="#allwayang" role="tab">Get All Wayang</a>
-                    <a class="list-group-item list-group-item-action" id="list-onewayang-list" data-toggle="list" href="#onewayang" role="tab">Get One Wayang</a>
-                    <a class="list-group-item list-group-item-action" id="list-search-list" data-toggle="list" href="#search" role="tab">Search Wayang</a>
-                    <a class="list-group-item list-group-item-action" id="list-add-list" data-toggle="list" href="#add" role="tab">Add Data</a>
-                    <a class="list-group-item list-group-item-action" id="list-update-list" data-toggle="list" href="#update" role="tab">Update Data</a>
-                    <a class="list-group-item list-group-item-action" id="list-delete-list" data-toggle="list" href="#delete" role="tab">Delete Data</a>
-                    </div>
+        <div class="container mt-8">
+        <!-- Nav tabs -->
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="allwayang-tab" data-toggle="tab" href="#allwayang" role="tab" aria-controls="allwayang" aria-selected="true">Get All Wayang</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="onewayang-tab" data-toggle="tab" href="#onewayang" role="tab" aria-controls="onewayang" aria-selected="false">Get One Wayang</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="search-tab" data-toggle="tab" href="#search" role="tab" aria-controls="search" aria-selected="false">Search Wayang</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="add-tab" data-toggle="tab" href="#add" role="tab" aria-controls="add" aria-selected="false">Add Wayang</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="update-tab" data-toggle="tab" href="#update" role="tab" aria-controls="update" aria-selected="false">Update Wayang</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="delete-tab" data-toggle="tab" href="#delete" role="tab" aria-controls="delete" aria-selected="false">Delete Wayang</a>
+                </li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div class="tab-pane active" id="allwayang" role="tabpanel" aria-labelledby="allwayang-tab">
+                    <h3>Return all wayang</h3>
                 </div>
-                <div class="col-8">
-                    <div class="tab-content" id="nav-tabContent">
-                    <div class="tab-pane fade show active" id="allwayang" role="tabpanel">
-                        <h3>Return all wayang</h3>
-                    </div>
-                    <div class="tab-pane fade" id="onewayang" role="tabpanel">
-                        <h3>Return one wayang</h3>
-                    </div>
-                    <div class="tab-pane fade" id="search" role="tabpanel">
-                        <h3>Search wayang</h3>
-                        <h4>Search by name</h4>
-                        <h4>Search by category</h4>
-                    </div>
-                    <div class="tab-pane fade" id="add" role="tabpanel">
-                        <h3>Add wayang</h3>
-                    </div>
-                    <div class="tab-pane fade" id="update" role="tabpanel">
-                        <h3>Update wayang</h3>
-                    </div>
-                    <div class="tab-pane fade" id="delete" role="tabpanel">
-                        <h3>Delete wayang</h3>
-                    </div>
-                    </div>
+                <div class="tab-pane" id="onewayang" role="tabpanel" aria-labelledby="onewayang-tab">
+                    <h3>Return one wayang</h3>
+                </div>
+                <div class="tab-pane" id="search" role="tabpanel" aria-labelledby="search-tab">
+                    <h3>Search wayang</h3>
+                </div>
+                <div class="tab-pane" id="add" role="tabpanel" aria-labelledby="add-tab">
+                    <h3>Add wayang</h3>
+                </div>
+                <div class="tab-pane" id="update" role="tabpanel" aria-labelledby="update-tab">
+                    <h3>Update wayang</h3>
+                </div>
+                <div class="tab-pane" id="delete" role="tabpanel" aria-labelledby="delete-tab">
+                    <h3>Delete wayang</h3>
                 </div>
             </div>
         </div>
