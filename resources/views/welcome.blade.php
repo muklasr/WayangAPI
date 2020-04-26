@@ -13,6 +13,7 @@
         <style>
             html, body {
                 background-color: #fff;
+                background-image: url('{{asset('images/background.png')}}');
                 color: #636b6f;
                 font-family: 'Nunito', sans-serif;
                 font-weight: 200;
@@ -72,7 +73,7 @@
                 </div>
 
                 <div class="links">
-                    <a href="https://wayangapi.herokuapp.com/docs">Docs</a>
+                    <a href="https://wayangapi.herokuapp.com/docs">Dokumentasi</a>
                     <a href="https://github.com/muklasr/wayangapi">GitHub</a>
                 </div>
             </div>

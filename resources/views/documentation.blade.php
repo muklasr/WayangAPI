@@ -18,8 +18,8 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                <a class="nav-item nav-link" href="/">Home</a>
-                <a class="nav-item nav-link active" href="#">Docs <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="/">Beranda</a>
+                <a class="nav-item nav-link active" href="#">Dokumentasi <span class="sr-only">(current)</span></a>
                 <a class="nav-item nav-link" href="https://github.com/muklasr/wayangapi">Github</a>
                 </div>
             </div>
@@ -28,25 +28,37 @@
             <div class="row">
                 <div class="col col-md-4">
                     <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                        <a class="nav-link active" id="v-pills-allwayang-tab" data-toggle="pill" href="#v-pills-allwayang" role="tab" aria-controls="v-pills-allwayang" aria-selected="true">Get All Wayang</a>
-                        <a class="nav-link" id="v-pills-onewayang-tab" data-toggle="pill" href="#v-pills-onewayang" role="tab" aria-controls="v-pills-onewayang" aria-selected="false">Get One Wayang</a>
-                        <a class="nav-link" id="v-pills-search-tab" data-toggle="pill" href="#v-pills-search" role="tab" aria-controls="v-pills-search" aria-selected="false">Search Wayang</a>
-                        <a class="nav-link" id="v-pills-add-tab" data-toggle="pill" href="#v-pills-add" role="tab" aria-controls="v-pills-add" aria-selected="false">Add Wayang</a>
-                        <a class="nav-link" id="v-pills-update-tab" data-toggle="pill" href="#v-pills-update" role="tab" aria-controls="v-pills-update" aria-selected="false">Update Wayang</a>
-                        <a class="nav-link" id="v-pills-delete-tab" data-toggle="pill" href="#v-pills-delete" role="tab" aria-controls="v-pills-delete" aria-selected="false">Delete Wayang</a>
+                        <a class="nav-link active" id="v-pills-allwayang-tab" data-toggle="pill" href="#v-pills-allwayang" role="tab" aria-controls="v-pills-allwayang" aria-selected="true">Mendapatkan Semua Wayang</a>
+                        <a class="nav-link" id="v-pills-onewayang-tab" data-toggle="pill" href="#v-pills-onewayang" role="tab" aria-controls="v-pills-onewayang" aria-selected="false">Mendapatkan Satu Wayang</a>
+                        <a class="nav-link" id="v-pills-search-tab" data-toggle="pill" href="#v-pills-search" role="tab" aria-controls="v-pills-search" aria-selected="false">Mencari Wayang</a>
+                        <a class="nav-link" id="v-pills-add-tab" data-toggle="pill" href="#v-pills-add" role="tab" aria-controls="v-pills-add" aria-selected="false">Menambah Wayang</a>
+                        <a class="nav-link" id="v-pills-update-tab" data-toggle="pill" href="#v-pills-update" role="tab" aria-controls="v-pills-update" aria-selected="false">Mengubah Wayang</a>
+                        <a class="nav-link" id="v-pills-delete-tab" data-toggle="pill" href="#v-pills-delete" role="tab" aria-controls="v-pills-delete" aria-selected="false">Menghapus Wayang</a>
                     </div>
                 </div>
                 <div class="col col-md-8">
                     <div class="tab-content" id="v-pills-tabContent">
                         <div class="tab-pane fade show active" id="v-pills-allwayang" role="tabpanel" aria-labelledby="v-pills-allwayang-tab">
-                            <h3>Return all wayang</h3>
-                            <h5>URL</h5>
+                            <h3>Mengambil semua data wayang</h3>
+                            <hr>
+                            <table class="table table-sm table-hover">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Method</th>
+                                        <th scope="col">URL</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td scope="row">GET</td>
+                                        <td><pre>https://wayangapi.herokuapp.com/api/wayang</pre></td>
+                                    </tr>
+                                </tbody>
+                            </table><br>
+                            <h5>Contoh Request</h5>
                             <hr>
                             <pre>https://wayangapi.herokuapp.com/api/wayang</pre><br>
-                            <h5>Request Samples</h5>
-                            <hr>
-                            <pre>https://wayangapi.herokuapp.com/api/wayang</pre><br>
-                            <h5 data-toggle="collapse" href="#allCollapse" role="button" aria-expanded="true" aria-controls="allCollapse">Response Samples</h5>
+                            <h5 data-toggle="collapse" href="#allCollapse" role="button" aria-expanded="true" aria-controls="allCollapse" title="Click for hide">Contoh Response</h5>
                             <hr>
                             <pre class="collapse show" id="allCollapse">
 {
@@ -85,14 +97,26 @@
                             </pre>
                         </div>
                         <div class="tab-pane fade" id="v-pills-onewayang" role="tabpanel" aria-labelledby="v-pills-onewayang-tab">
-                            <h3>Return one wayang</h3>
-                            <h5>URL</h5>
+                            <h3>Mengambil satu data wayang</h3>
                             <hr>
-                            <pre>https://wayangapi.herokuapp.com/api/wayang/{id}</pre><br>
-                            <h5>Request Samples</h5>
+                            <table class="table table-sm table-hover">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Method</th>
+                                        <th scope="col">URL</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td scope="row">GET</td>
+                                        <td><pre>https://wayangapi.herokuapp.com/api/wayang/{id}</pre></td>
+                                    </tr>
+                                </tbody>
+                            </table><br>
+                            <h5>Contoh Request</h5>
                             <hr>
                             <pre>https://wayangapi.herokuapp.com/api/wayang/2</pre><br>
-                            <h5 data-toggle="collapse" href="#oneCollapse" role="button" aria-expanded="true" aria-controls="oneCollapse">Response Samples</h5>
+                            <h5 data-toggle="collapse" href="#oneCollapse" role="button" aria-expanded="true" aria-controls="oneCollapse" title="Click for hide">Contoh Response</h5>
                             <hr>
                             <pre class="collapse show" id="oneCollapse">
 {
@@ -117,15 +141,27 @@
                             </pre>
                         </div>
                         <div class="tab-pane fade" id="v-pills-search" role="tabpanel" aria-labelledby="v-pills-search-tab">
-                            <h3>Search wayang</h3>
-                            <h4>Search by name</h4>
-                            <h5>URL</h5>
+                            <h3>Mencari wayang</h3>
+                            <h4>Berdasarkan kemiripan nama</h4>
                             <hr>
-                            <pre>https://wayangapi.herokuapp.com/api/wayang/search/{name}</pre><br>
-                            <h5>Request Samples</h5>
+                            <table class="table table-sm table-hover">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Method</th>
+                                        <th scope="col">URL</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td scope="row">GET</td>
+                                        <td><pre>https://wayangapi.herokuapp.com/api/wayang/search/{nama}</pre></td>
+                                    </tr>
+                                </tbody>
+                            </table><br>
+                            <h5>Contoh Request</h5>
                             <hr>
                             <pre>https://wayangapi.herokuapp.com/api/wayang/search/Ba</pre><br>
-                            <h5 data-toggle="collapse" href="#snameCollapse" role="button" aria-expanded="true" aria-controls="snameCollapse">Response Samples</h5>
+                            <h5 data-toggle="collapse" href="#snameCollapse" role="button" aria-expanded="true" aria-controls="snameCollapse" title="Click for hide">Contoh Response</h5>
                             <hr>
                             <pre class="collapse show" id="snameCollapse">
 {
@@ -163,14 +199,26 @@
 }
                             </pre><br>
 
-                            <h4>Search by category</h4>
-                            <h5>URL</h5>
+                            <h4>Berdasarkan golongan</h4>
                             <hr>
-                            <pre>https://wayangapi.herokuapp.com/api/wayang/category/{category}</pre>
-                            <h5>Request Samples</h5>
+                            <table class="table table-sm table-hover">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Method</th>
+                                        <th scope="col">URL</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td scope="row">GET</td>
+                                        <td><pre>https://wayangapi.herokuapp.com/api/wayang/category/{golongan}</pre></td>
+                                    </tr>
+                                </tbody>
+                            </table><br>
+                            <h5>Contoh Request</h5>
                             <hr>
                             <pre>https://wayangapi.herokuapp.com/api/wayang/category/ponokawan</pre><br>
-                            <h5 data-toggle="collapse" href="#scatCollapse" role="button" aria-expanded="true" aria-controls="scatCollapse">Response Samples</h5>
+                            <h5 data-toggle="collapse" href="#scatCollapse" role="button" aria-expanded="true" aria-controls="scatCollapse" title="Click for hide">Contoh Response</h5>
                             <hr>
                             <pre class="collapse show" id="scatCollapse">
 {
@@ -236,7 +284,73 @@
 }
                             </pre>
                         </div>
-                        <div class="tab-pane fade" id="v-pills-add" role="tabpanel" aria-labelledby="v-pills-add-tab">N/A</div>
+                        <div class="tab-pane fade" id="v-pills-add" role="tabpanel" aria-labelledby="v-pills-add-tab">
+                            <h3>Menambah satu wayang</h3>
+                            <hr>
+                            <table class="table table-sm table-hover">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Method</th>
+                                        <th scope="col">URL</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td scope="row">POST</td>
+                                        <td><pre>https://wayangapi.herokuapp.com/api/wayang</pre></td>
+                                    </tr>
+                                </tbody>
+                            </table><br>
+                            <pre>https://wayangapi.herokuapp.com/api/wayang</pre><br>
+                            <h5>Data yang dibutuhkan</h5>
+                            <hr>
+                            <table class="table table-sm table-hover">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Kolom</th>
+                                        <th scope="col">Definisi</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td scope="row">nama</td>
+                                        <td>Nama dari tokoh wayang.</td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row">golongan</td>
+                                        <td>Golongan dari tokoh wayang. <br>Misalnya ponokawan, pandawa, dsb.</td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row">kasta</td>
+                                        <td>Kasta dari tokoh wayang. <br>Misalnya kesatria, dsb.</td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row">senjata</td>
+                                        <td>Senjata yang dimiliki tokoh wayang.</td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row">ayah</td>
+                                        <td>Ayah dari tokoh wayang.</td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row">ibu</td>
+                                        <td>Ibu dari tokoh wayang.</td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row">pasangan</td>
+                                        <td>Pasangan dari tokoh wayang.</td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row">anak</td>
+                                        <td>Anak dari tokoh wayang.</td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row">image_url</td>
+                                        <td>Url/alamat gambar tokoh wayang.</td>
+                                    </tr>
+                                </tbody>
+                            </table><br>
+                        </div>
                         <div class="tab-pane fade" id="v-pills-update" role="tabpanel" aria-labelledby="v-pills-update-tab">N/A</div>
                         <div class="tab-pane fade" id="v-pills-delete" role="tabpanel" aria-labelledby="v-pills-delete-tab">N/A</div>
                     </div>
