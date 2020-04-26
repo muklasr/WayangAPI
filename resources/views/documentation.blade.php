@@ -8,7 +8,7 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
-
+        <link rel="stylesheet" type="text/css" href="{{ asset('/css/app.css') }}">
         <!-- Styles -->
         <style>
             html, body {
@@ -20,18 +20,10 @@
                 margin: 0;
             }
 
-            .full-height {
-                height: 100vh;
-            }
-
             .flex-center {
                 align-items: center;
                 display: flex;
                 justify-content: center;
-            }
-
-            .position-ref {
-                position: relative;
             }
 
             .top-right {
@@ -64,18 +56,18 @@
         </style>
     </head>
     <body>
-        <div class="flex-center position-ref full-height">
-
-            <div class="content">
-                <div class="title m-b-md">
-                    WayangAPI
-                </div>
-
-                <div class="links">
-                    <a href="https://wayangapi.herokuapp.com/docs">Docs</a>
-                    <a href="https://github.com/muklasr/wayangapi">GitHub</a>
+        <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-primary">
+            <a class="navbar-brand" href="#">WayangAPI</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                <a class="nav-item nav-link" href="/">Home</a>
+                <a class="nav-item nav-link active" href="#">Docs <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="https://github.com/muklasr/wayangapi">Github</a>
                 </div>
             </div>
-        </div>
+        </nav>
     </body>
 </html>
