@@ -27,219 +27,6 @@
         <div class="container mt-5">
             <div class="row">
                 <div class="col col-md-4">
-                <!-- Nav tabs -->
-                    <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                        <a class="nav-link active" id="v-pills-allwayang-tab" data-toggle="pill" href="#allwayang" role="tab" aria-controls="v-pills-allwayang" aria-selected="true">Get All Wayang</a>
-                        <a class="nav-link" id="v-pills-onewayang-tab" data-toggle="pill" href="#onewayang" role="tab" aria-controls="v-pills-onewayang" aria-selected="false">Get One Wayang</a>
-                        <a class="nav-link" id="v-pills-search-tab" data-toggle="pill" href="#search" role="tab" aria-controls="v-pills-search" aria-selected="false">Search Wayang</a>
-                        <a class="nav-link" id="v-pills-add-tab" data-toggle="pill" href="#add" role="tab" aria-controls="v-pills-add" aria-selected="false">Add Wayang</a>
-                        <a class="nav-link" id="v-pills-update-tab" data-toggle="pill" href="#update" role="tab" aria-controls="v-pills-update" aria-selected="false">Update Wayang</a>
-                        <a class="nav-link" id="v-pills-delete-tab" data-toggle="pill" href="#delete" role="tab" aria-controls="v-pills-delete" aria-selected="false">Delete Wayang</a>
-                    </div>
-                </div>
-                <div class="col col-md-8">
-                    <!-- Tab panes -->
-                    <div class="tab-content" id="v-pills-tabContent">
-                        <div class="tab-pane show active" id="v-pills-allwayang" role="tabpanel" aria-labelledby="v-pills-allwayang-tab">
-                            <h3>Return all wayang</h3>
-                            <h5>URL</h5>
-                            <hr>
-                            <pre>https://wayangapi.herokuapp.com/api/wayang</pre>
-                            <h5>Response Samples</h5>
-                            <hr>
-                            <pre>
-                                {
-                                    "code":200,
-                                    "result":[
-                                    {
-                                        "id":2,
-                                        "nama":"Arjuna/Janaka",
-                                        "golongan":"Pandawa",
-                                        "kasta":"Kesatria",
-                                        "senjata":"Panah Pasupati, Brahmastra, Busur Gandiwa\nVersi wayang: Ardedali, Sarotama, Keris Pulanggeni, Keris Kalanadah.",
-                                        "ayah":"Pandu (sah),\nIndra (de facto)",
-                                        "ibu":"Kunti",
-                                        "pasangan":"Dropadi,\nUlupi,\nCitrānggadā,\nSubadra,",
-                                        "anak":"Srutakirti (dari Dropadi),\nIrawan (dari Ulupi),\nBabruwahana (dari Citrānggadā),\nAbimanyu (dari Subadra),\nWisanggeni (dari Dresanala),",
-                                        "image_url":"https://i.pinimg.com/564x/e0/8c/53/e08c53f478d12e842dd2dd11a104e6b0.jpg",
-                                        "created_at":"2020-04-02 08:16:45",
-                                        "updated_at":"2020-04-02 08:16:45"
-                                    },
-                                    {
-                                        "id":7,
-                                        "nama":"Semar/SangHyang Ismaya",
-                                        "golongan":"Ponokawan",
-                                        "kasta":"N/A",
-                                        "senjata":"N/A",
-                                        "ayah":"SangHyang Tunggal",
-                                        "ibu":"Dewi Wirandi/Rekatawati",
-                                        "pasangan":"N/A",
-                                        "anak":"Gareng, Petruk, Bagong",
-                                        "image_url":"https://i.pinimg.com/564x/f3/2f/a3/f32fa30df58b67d855be580d92044d74.jpg",
-                                        "created_at":"2020-04-02 08:30:13",
-                                        "updated_at":"2020-04-02 08:30:13"
-                                    }
-                                    ]
-                                }
-                            </pre>
-                        </div>
-                        <div class="tab-pane fade" id="v-pills-onewayang" role="tabpanel" aria-labelledby="v-pills-onewayang-tab">
-                            <h3>Return one wayang</h3>
-                            <h5>URL</h5>
-                            <hr>
-                            <pre>https://wayangapi.herokuapp.com/api/wayang/{id}</pre>
-                            <h5>Response Samples</h5>
-                            <hr>
-                            <pre>
-                                {
-                                    "code":200,
-                                    "result":[
-                                    {
-                                        "id":2,
-                                        "nama":"Arjuna/Janaka",
-                                        "golongan":"Pandawa",
-                                        "kasta":"Kesatria",
-                                        "senjata":"Panah Pasupati, Brahmastra, Busur Gandiwa\nVersi wayang: Ardedali, Sarotama, Keris Pulanggeni, Keris Kalanadah.",
-                                        "ayah":"Pandu (sah),\nIndra (de facto)",
-                                        "ibu":"Kunti",
-                                        "pasangan":"Dropadi,\nUlupi,\nCitrānggadā,\nSubadra,",
-                                        "anak":"Srutakirti (dari Dropadi),\nIrawan (dari Ulupi),\nBabruwahana (dari Citrānggadā),\nAbimanyu (dari Subadra),\nWisanggeni (dari Dresanala),",
-                                        "image_url":"https://i.pinimg.com/564x/e0/8c/53/e08c53f478d12e842dd2dd11a104e6b0.jpg",
-                                        "created_at":"2020-04-02 08:16:45",
-                                        "updated_at":"2020-04-02 08:16:45"
-                                    }
-                                    ]
-                                }
-                            </pre>
-                        </div>
-                        <div class="tab-pane fade" id="v-pills-search" role="tabpanel" aria-labelledby="v-pills-search-tab">
-                            <h3>Search wayang</h3>
-                            <h4>Search by name</h4>
-                            <h5>URL</h5>
-                            <hr>
-                            <pre>https://wayangapi.herokuapp.com/api/wayang/search/{name}</pre>
-                            <h5>Response Samples</h5>
-                            <hr>
-                            <pre>
-                                {
-                                "code": 200,
-                                "result": [
-                                    {
-                                    "id": 1,
-                                    "nama": "Bagong",
-                                    "golongan": "Ponokawan",
-                                    "kasta": "N/A",
-                                    "senjata": "N/A",
-                                    "ayah": "Semar",
-                                    "ibu": "N/A",
-                                    "pasangan": "N/A",
-                                    "anak": "N/A",
-                                    "image_url": "http://www.hadisukirno.co.id/images/produk/Bagong-Solo.jpg",
-                                    "created_at": "2020-04-02 08:07:15",
-                                    "updated_at": "2020-04-02 10:25:01"
-                                    },
-                                    {
-                                    "id": 16,
-                                    "nama": "Batara Narada",
-                                    "golongan": "Batara",
-                                    "kasta": "N/A",
-                                    "senjata": "N/A",
-                                    "ayah": "N/A",
-                                    "ibu": "N/A",
-                                    "pasangan": "N/A",
-                                    "anak": "N/A",
-                                    "image_url": "https://i.pinimg.com/236x/6f/6a/99/6f6a99436e014ad6bfc048a7c51d8797.jpg",
-                                    "created_at": "2020-04-02 08:37:34",
-                                    "updated_at": "2020-04-02 10:26:52"
-                                    }
-                                ]
-                                }
-                            </pre>
-
-                            <h4>Search by category</h4>
-                            <h5>URL</h5>
-                            <hr>
-                            <pre>https://wayangapi.herokuapp.com/api/wayang/category/{category}</pre>
-                            <h5>Response Samples</h5>
-                            <hr>
-                            <pre>
-                                {
-                                "code": 200,
-                                "result": [
-                                    {
-                                    "id": 7,
-                                    "nama": "Semar/SangHyang Ismaya",
-                                    "golongan": "Ponokawan",
-                                    "kasta": "N/A",
-                                    "senjata": "N/A",
-                                    "ayah": "SangHyang Tunggal",
-                                    "ibu": "Dewi Wirandi/Rekatawati",
-                                    "pasangan": "N/A",
-                                    "anak": "Gareng, Petruk, Bagong",
-                                    "image_url": "https://i.pinimg.com/564x/f3/2f/a3/f32fa30df58b67d855be580d92044d74.jpg",
-                                    "created_at": "2020-04-02 08:30:13",
-                                    "updated_at": "2020-04-02 08:30:13"
-                                    },
-                                    {
-                                    "id": 1,
-                                    "nama": "Bagong",
-                                    "golongan": "Ponokawan",
-                                    "kasta": "N/A",
-                                    "senjata": "N/A",
-                                    "ayah": "Semar",
-                                    "ibu": "N/A",
-                                    "pasangan": "N/A",
-                                    "anak": "N/A",
-                                    "image_url": "http://www.hadisukirno.co.id/images/produk/Bagong-Solo.jpg",
-                                    "created_at": "2020-04-02 08:07:15",
-                                    "updated_at": "2020-04-02 10:25:01"
-                                    },
-                                    {
-                                    "id": 9,
-                                    "nama": "Nala Gareng",
-                                    "golongan": "Ponokawan",
-                                    "kasta": "N/A",
-                                    "senjata": "N/A",
-                                    "ayah": "Semar",
-                                    "ibu": "N/A",
-                                    "pasangan": "Dewi Sariwati",
-                                    "anak": "N/A",
-                                    "image_url": "https://i.pinimg.com/564x/3f/ff/8c/3fff8c378e76006c6eaa4bad0f03a047.jpg",
-                                    "created_at": "2020-04-02 08:32:52",
-                                    "updated_at": "2020-04-02 13:43:41"
-                                    },
-                                    {
-                                    "id": 8,
-                                    "nama": "Petruk",
-                                    "golongan": "Ponokawan",
-                                    "kasta": "N/A",
-                                    "senjata": "N/A",
-                                    "ayah": "Semar",
-                                    "ibu": "N/A",
-                                    "pasangan": "Dewi Ambarawati",
-                                    "anak": "Lengkungkusuma",
-                                    "image_url": "https://i.pinimg.com/564x/6f/f6/62/6ff6629200071bb5e3ec339cc2157c75.jpg",
-                                    "created_at": "2020-04-02 08:32:16",
-                                    "updated_at": "2020-04-02 13:52:01"
-                                    }
-                                ]
-                                }
-                            </pre>
-                        </div>
-                        <div class="tab-pane fade" id="v-pills-add" role="tabpanel" aria-labelledby="v-pills-add-tab">
-                            <h3>Add wayang</h3>
-                        </div>
-                        <div class="tab-pane fade" id="v-pills-update" role="tabpanel" aria-labelledby="v-pills-update-tab">
-                            <h3>Update wayang</h3>
-                        </div>
-                        <div class="tab-pane fade" id="v-pills-delete" role="tabpanel" aria-labelledby="v-pills-delete-tab">
-                            <h3>Delete wayang</h3>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col col-md-4">
                     <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                         <a class="nav-link active" id="v-pills-allwayang-tab" data-toggle="pill" href="#v-pills-allwayang" role="tab" aria-controls="v-pills-allwayang" aria-selected="true">Get All Wayang</a>
                         <a class="nav-link" id="v-pills-onewayang-tab" data-toggle="pill" href="#v-pills-onewayang" role="tab" aria-controls="v-pills-onewayang" aria-selected="false">Get One Wayang</a>
@@ -255,7 +42,10 @@
                             <h3>Return all wayang</h3>
                             <h5>URL</h5>
                             <hr>
-                            <pre>https://wayangapi.herokuapp.com/api/wayang</pre>
+                            <pre>https://wayangapi.herokuapp.com/api/wayang</pre><br>
+                            <h5>Request Samples</h5>
+                            <hr>
+                            <pre>https://wayangapi.herokuapp.com/api/wayang</pre><br>
                             <h5>Response Samples</h5>
                             <hr>
                             <pre>
@@ -298,7 +88,10 @@
                             <h3>Return one wayang</h3>
                             <h5>URL</h5>
                             <hr>
-                            <pre>https://wayangapi.herokuapp.com/api/wayang/{id}</pre>
+                            <pre>https://wayangapi.herokuapp.com/api/wayang/{id}</pre><br>
+                            <h5>Request Samples</h5>
+                            <hr>
+                            <pre>https://wayangapi.herokuapp.com/api/wayang/2</pre><br>
                             <h5>Response Samples</h5>
                             <hr>
                             <pre>
@@ -328,7 +121,10 @@
                             <h4>Search by name</h4>
                             <h5>URL</h5>
                             <hr>
-                            <pre>https://wayangapi.herokuapp.com/api/wayang/search/{name}</pre>
+                            <pre>https://wayangapi.herokuapp.com/api/wayang/search/{name}</pre><br>
+                            <h5>Request Samples</h5>
+                            <hr>
+                            <pre>https://wayangapi.herokuapp.com/api/wayang/search/Ba</pre><br>
                             <h5>Response Samples</h5>
                             <hr>
                             <pre>
@@ -365,12 +161,15 @@
                                     }
                                 ]
                                 }
-                            </pre>
+                            </pre><br>
 
                             <h4>Search by category</h4>
                             <h5>URL</h5>
                             <hr>
                             <pre>https://wayangapi.herokuapp.com/api/wayang/category/{category}</pre>
+                            <h5>Request Samples</h5>
+                            <hr>
+                            <pre>https://wayangapi.herokuapp.com/api/wayang/category/ponokawan</pre><br>
                             <h5>Response Samples</h5>
                             <hr>
                             <pre>
@@ -437,9 +236,9 @@
                                 }
                             </pre>
                         </div>
-                        <div class="tab-pane fade" id="v-pills-add" role="tabpanel" aria-labelledby="v-pills-add-tab">d</div>
-                        <div class="tab-pane fade" id="v-pills-update" role="tabpanel" aria-labelledby="v-pills-update-tab">d</div>
-                        <div class="tab-pane fade" id="v-pills-delete" role="tabpanel" aria-labelledby="v-pills-delete-tab">d</div>
+                        <div class="tab-pane fade" id="v-pills-add" role="tabpanel" aria-labelledby="v-pills-add-tab">N/A</div>
+                        <div class="tab-pane fade" id="v-pills-update" role="tabpanel" aria-labelledby="v-pills-update-tab">N/A</div>
+                        <div class="tab-pane fade" id="v-pills-delete" role="tabpanel" aria-labelledby="v-pills-delete-tab">N/A</div>
                     </div>
                 </div>
             </div>
