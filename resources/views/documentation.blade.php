@@ -41,7 +41,7 @@
                         <div class="tab-pane fade show active" id="v-pills-allwayang" role="tabpanel" aria-labelledby="v-pills-allwayang-tab">
                             <h3>Mengambil semua data wayang</h3>
                             <hr>
-                            <table class="table table-sm table-hover">
+                            <table class="table">
                                 <thead>
                                     <tr>
                                         <th scope="col">Method</th>
@@ -50,7 +50,7 @@
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td scope="row">GET</td>
+                                        <td scope="row"><span class="badge badge-success">GET</span></td>
                                         <td><pre>https://wayangapi.herokuapp.com/api/wayang</pre></td>
                                     </tr>
                                 </tbody>
@@ -99,7 +99,7 @@
                         <div class="tab-pane fade" id="v-pills-onewayang" role="tabpanel" aria-labelledby="v-pills-onewayang-tab">
                             <h3>Mengambil satu data wayang</h3>
                             <hr>
-                            <table class="table table-sm table-hover">
+                            <table class="table">
                                 <thead>
                                     <tr>
                                         <th scope="col">Method</th>
@@ -108,7 +108,7 @@
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td scope="row">GET</td>
+                                        <td scope="row"><span class="badge badge-success">GET</span></td>
                                         <td><pre>https://wayangapi.herokuapp.com/api/wayang/{id}</pre></td>
                                     </tr>
                                 </tbody>
@@ -144,7 +144,7 @@
                             <h3>Mencari wayang</h3>
                             <h4>Berdasarkan kemiripan nama</h4>
                             <hr>
-                            <table class="table table-sm table-hover">
+                            <table class="table">
                                 <thead>
                                     <tr>
                                         <th scope="col">Method</th>
@@ -153,7 +153,7 @@
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td scope="row">GET</td>
+                                        <td scope="row"><span class="badge badge-success">GET</span></td>
                                         <td><pre>https://wayangapi.herokuapp.com/api/wayang/search/{nama}</pre></td>
                                     </tr>
                                 </tbody>
@@ -201,7 +201,7 @@
 
                             <h4>Berdasarkan golongan</h4>
                             <hr>
-                            <table class="table table-sm table-hover">
+                            <table class="table">
                                 <thead>
                                     <tr>
                                         <th scope="col">Method</th>
@@ -210,7 +210,7 @@
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td scope="row">GET</td>
+                                        <td scope="row"><span class="badge badge-success">GET</span></td>
                                         <td><pre>https://wayangapi.herokuapp.com/api/wayang/category/{golongan}</pre></td>
                                     </tr>
                                 </tbody>
@@ -287,7 +287,7 @@
                         <div class="tab-pane fade" id="v-pills-add" role="tabpanel" aria-labelledby="v-pills-add-tab">
                             <h3>Menambah satu wayang</h3>
                             <hr>
-                            <table class="table table-sm table-hover">
+                            <table class="table">
                                 <thead>
                                     <tr>
                                         <th scope="col">Method</th>
@@ -296,15 +296,14 @@
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td scope="row">POST</td>
+                                        <td scope="row"><span class="badge badge-success">POST</span></td>
                                         <td><pre>https://wayangapi.herokuapp.com/api/wayang</pre></td>
                                     </tr>
                                 </tbody>
                             </table><br>
-                            <pre>https://wayangapi.herokuapp.com/api/wayang</pre><br>
                             <h5>Data yang dibutuhkan</h5>
                             <hr>
-                            <table class="table table-sm table-hover">
+                            <table class="table">
                                 <thead>
                                     <tr>
                                         <th scope="col">Kolom</th>
@@ -351,8 +350,90 @@
                                 </tbody>
                             </table><br>
                         </div>
-                        <div class="tab-pane fade" id="v-pills-update" role="tabpanel" aria-labelledby="v-pills-update-tab">N/A</div>
-                        <div class="tab-pane fade" id="v-pills-delete" role="tabpanel" aria-labelledby="v-pills-delete-tab">N/A</div>
+                        <div class="tab-pane fade" id="v-pills-update" role="tabpanel" aria-labelledby="v-pills-update-tab">
+                            <h3>Mengubah satu wayang</h3>
+                            <hr>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Method</th>
+                                        <th scope="col">URL</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td scope="row"><span class="badge badge-warning">PUT</span></td>
+                                        <td><pre>https://wayangapi.herokuapp.com/api/wayang/{id_wayang_yang_akan_diubah}</pre></td>
+                                    </tr>
+                                </tbody>
+                            </table><br>
+                            <h5>Data yang dibutuhkan</h5>
+                            <hr>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Kolom</th>
+                                        <th scope="col">Definisi</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td scope="row">nama</td>
+                                        <td>Nama dari tokoh wayang.</td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row">golongan</td>
+                                        <td>Golongan dari tokoh wayang. <br>Misalnya ponokawan, pandawa, dsb.</td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row">kasta</td>
+                                        <td>Kasta dari tokoh wayang. <br>Misalnya kesatria, dsb.</td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row">senjata</td>
+                                        <td>Senjata yang dimiliki tokoh wayang.</td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row">ayah</td>
+                                        <td>Ayah dari tokoh wayang.</td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row">ibu</td>
+                                        <td>Ibu dari tokoh wayang.</td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row">pasangan</td>
+                                        <td>Pasangan dari tokoh wayang.</td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row">anak</td>
+                                        <td>Anak dari tokoh wayang.</td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row">image_url</td>
+                                        <td>Url/alamat gambar tokoh wayang.</td>
+                                    </tr>
+                                </tbody>
+                            </table><br>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-delete" role="tabpanel" aria-labelledby="v-pills-delete-tab">
+                        <h3>Menghapus satu wayang</h3>
+                            <hr>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Method</th>
+                                        <th scope="col">URL</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td scope="row"><span class="badge badge-danger">DELETE</span></td>
+                                        <td><pre>https://wayangapi.herokuapp.com/api/wayang/{id_wayang_yang_akan_dihapus}</pre></td>
+                                    </tr>
+                                </tbody>
+                            </table><br>
+                        </div>
                     </div>
                 </div>
             </div>
