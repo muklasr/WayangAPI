@@ -1,4 +1,4 @@
-<p align="center"><img src="https://i.ibb.co/HDQyThb/Group-10.png" border="0" width="150"></p>
+<p align="center"><img src="https://i.ibb.co/HDQyThb/Group-10.png" border="0" width="100"></p>
 
 ## Tentang WayangAPI
 WayangAPI adalah sebuah web service yang menyediakan sumber daya informasi seputar dunia pewayangan terutama wayang kulit. WayangAPI dikembangkan menggunakan framework laravel.
