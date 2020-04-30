@@ -20,7 +20,6 @@ class Cors
 
         // ALLOW OPTIONS METHOD
         $headers = [
-            'Access-Control-Allow-Origin'=> '*',
             'Access-Control-Allow-Methods'=> '*',
             'Access-Control-Allow-Credentials'=> 'true',
             'Access-Control-Allow-Headers'=> 'Content-Type, X-Auth-Token, Origin'
